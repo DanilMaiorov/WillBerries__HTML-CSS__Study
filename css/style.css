@@ -1,36 +1,167 @@
 /* стили хедера */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 62.5%;
+}
+.header {
+    padding: 1.5rem 0;
+}
 .navigation {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 /* стили меню хедера */
 .navigation__item-link {
     text-decoration: none;
     color: #939699;
-    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 1.4rem;
+    line-height: 2rem;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.05rem;
 }
 /* стили кнопки */
 .button {
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     border: none;
-    border-radius: 20px;
+    border-radius: 2rem;
     background: #4592FF;
     color: #fff;
-    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 1.4rem;
+    line-height: 2rem;
     display: flex;
     align-items: center;
     cursor: pointer;
 }
-.button__icon {
-    margin-right: 10px;
+.button__icon, .button__price {
+    margin-right: 1rem;
 }
+.button__icon:last-child {
+    margin-right: 0;
+    padding-left: 1rem;
+}
+/* стили слайдера */
+.slider {
+    position: relative;
+    margin-bottom: 20px;
+}
+.slide {
+    padding-top: 9rem;
+    padding-bottom: 11rem;
+}
+.slide-1 {
+    /* при помощи бекграунд можем задать и цвет и картинку и спозиционировать её */
+    background: #B4D1E0 url(../img/slide-img-1.png) no-repeat /* сначала задаем вертикальное расположение, потом горизонтальное и можем еще отодвинуть прописав проценты --> */ top right 5%; 
+}
+.label {
+    background: #3DC47E;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1.2rem;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+.slide__title {
+    color: #262D33;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 5.5rem;
+    line-height: 7rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+.slide__description {
+    min-width: 33.5rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: #4B5157;
+    margin-bottom: 4rem;
+}
+.slider-nav {
+    position: absolute;
+    top: 50%; /* опустили на 50% вниз, но кнопки будут не посередине, потому они опустились от верхнего края и нужно их поднять */
+    width: 100%;
+    transform: translateY(-50%); /* поднимаем кнопки на половину их высоты по оси Y */
+}
+.slider__button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+/* стили блока с карточками */
+.card {
+    min-height: 37rem;
+    border-radius: 1rem;
+    padding: 6rem 4.6rem 8rem 4.6rem;
+}
+.card-1 {
+    background: #E3E3E3 url(/img/card-1-img.png) no-repeat top right;
+    background-size: cover;
+}
+.card-2 {
+    background: #000 url(/img/card-2-img.png) no-repeat top right;
+    background-size: cover;
+}
+.card-3 {
+    padding-top: 3.5rem;
+    background: #CCD5E6 url(/img/card-3-img.png) no-repeat top right 15%;
+    background-size: contain;
+}
+.card-4 {
+    padding-top: 3.5rem;
+    background: #FF4F52 url(/img/card-4-img.png) no-repeat top right;    background-size: contain;
+    padding-left: 2.6rem;
+    min-height: 100%;
+}
+.card__title {
+    margin-top: 0;
+    max-width: 22.1rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #262D33;
+    margin-bottom: 1.5rem;
+}
+.card__title.large {
+    max-width: 42rem;
+    font-size: 4rem;
+    line-height: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+.card__text {
+    max-width: 17.5rem;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #4B5157;
+    margin-bottom: 2.5rem;
+}
+.card__text.large {
+    max-width: 32rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding-bottom: 1.5rem;
+}
+.text-light {
+    color: #fff;
+}
+.card__price {
+    padding-top: 1.5rem;
+    font-weight: 900;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+}
+
+

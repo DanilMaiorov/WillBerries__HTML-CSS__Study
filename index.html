@@ -7,13 +7,13 @@
     <script src="./main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>WillBerries</title>
 </head>
 <body>
-    <header class="container">
+    <header class="container header">
         <div class="row justify-content-between align-items-center">
             <!-- align-items класс, дающий align-items, в зависимости что пропишем -->
             <!-- row класс дающий строку -->
@@ -69,8 +69,92 @@
                 </button>
             </div>
         </div>
-
     </header>
+    <!-- Top-Slider -->
+    <div class="slider">
+        <section class="slide slide-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 offset-lg-1">
+                    <!-- offset-lg-1 класс, дает отсутп слева на 1 колонку сетки -->
+                        <span class="label">Bestseller</span>
+                        <h2 class="slide__title">Sweater Choker Neck </h2>
+                        <p class="slide__description">Women’s pearl basic knit sweater with a round neck. Available in several colours. Free shipping to stores.</p>
+                        <button class="button">
+                            <span class="button__price">$319</span>
+                            <span class="button__text">Shop now</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="slider-nav">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-1">
+                        <button class="slider__button">
+                            <img src="/img/arrow-prev.svg" alt="arrow: prev">
+                        </button>
+                    </div>
+                    <div class="col-1">
+                        <button class="slider__button">
+                            <img src="/img/arrow-next.svg" alt="arrow: prev">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="container pt-5 pb-5">
+        <!-- pt-5 класс, дает паддинг топ сверху на 3 рем -->
+        <div class="row">
+            <!-- 1 card -->
+            <div class="col-6">
+                <div class="card card-1 mb-5">
+                    <h3 class="card__title">Fashion Month Ready in Capital Shop</h3>
+                    <p class="card__text">Bags & Acsessories & Lingerie & Sportswear & Beauty & Swimwear</p>
+                    <button class="button">
+                        <span class="button__text">View all</span>
+                        <img class="button__icon" src="/img/arrow.svg" alt="icon: arrow">
+                    </button>
+                </div>
+            </div>
+            <!-- 2 card -->
+            <div class="col-6">
+                <div class="card card-2 mb-5">
+                    <h3 class="card__title text-light">Catch the Sun: Spring Break Styles From $5.99</h3>
+                    <p class="card__text text-light">Sweaters & Hoodies & Puffer Jackets & Coats and Jackets & Knit</p>
+                    <button class="button">
+                        <span class="button__text">View all</span>
+                        <img class="button__icon" src="/img/arrow.svg" alt="icon: arrow">
+                    </button>
+                </div>
+            </div>
+            <!-- 3 card -->
+            <div class="col-9">
+                <div class="card card-3">
+                    <span class="label">Bestseller</span>
+                    <h3 class="card__title large">Poplin Top 
+                        With Sleeve Bow</h3>
+                    <p class="card__text large">Poplin top <br>With roll neckline, long sleeves</p>
+                    <button class="button">
+                        <span class="button__price">$129</span>
+                        <span class="button__text">Shop now</span>
+                    </button>
+                </div>
+            </div>
+            <!-- 4 card -->
+            <div class="col-3">
+                <div class="card card-4">
+                    <h3 class="card__title text-light">Printed Shirt <br>with a Bow</h3>
+                    <p class="card__text text-light">Pink/Sky Blue/Yellow</p>
+                    <span class="card__price">$129</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 

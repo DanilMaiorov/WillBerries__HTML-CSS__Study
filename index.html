@@ -5,42 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>WillBerries</title>
 </head>
 <body>
-    <!-- вводи команду npm i чтобы загрузить папку node_modules и файл package-lock.json
+    <header class="container">
+        <div class="row justify-content-between align-items-center">
+            <!-- align-items класс, дающий align-items, в зависимости что пропишем -->
+            <!-- row класс дающий строку -->
+            <div class="col-2">
+                <!-- col-2 класс, захватывающий 2 колонки сетки -->
+                <a href="/" class="logo-link">
+                    <img class="logo-img" width="128" src="/img/logo-willberries.svg" alt="logo: willBerries">
+                </a>
+            </div>
+            <div class="col-6">
+                <!-- col-6 класс, захватывающий 6 колонок сетки -->
+                <nav>
+                    <ul class="navigation d-flex justify-content-around">
+                        <!-- d-flex класс, дающий flex -->
+                        
+                        <li class="navigation__item">
+                            <a class="navigation__item-link" href="">
+                                Womens
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__item-link" href="">
+                                Mens
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__item-link" href="">
+                                Goods
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__item-link" href="">
+                                Accessories
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__item-link" href="">
+                                Brands
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__item-link" href="">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-2 d-flex justify-content-end">
+                <button class="button">
+                    <img class="button__icon" src="/img/cart-logo-header.svg" alt="logo: cart">
+                    <span class="button__text">Cart</span>
+                </button>
+            </div>
+        </div>
 
-    npm run watch запускаем с начала разработки
-
-    npx webpack нужен для добавления в main.js файлов модулей
-
-    следить за версиями webpack
-
-    в файле webpack.config.js:
-    entry - файл точки входа
-    output: 
-        filename - имя файла сборщика
-        path - путь в который он помещается !нужно указывать обсолютный путь!, для этого нужно обратиться к дополнительной библиотеке, прописываем выше const path = require('path'), а path как в свойстве path.resolve(__dirname, 'dist')
-
-        замена liveserver внутренним функционалом webpack - установка еще одной зависимости npm i webpack-dev-server -D(--D для установки в dev depenpences, так как на продакшн она нам не нужна) и добавим настройки в webpack.config
-        devServer: {
-            hot: true, - для горячей перезагрузки
-            static: {
-                directory: './dist',  
-                watch: true,  - для отслеживая файлов devserver'ом
-
-        а также пропишем в package еще один скрипт "start"
-
-        когда клонируем git clone (ссылка на репо), то делаем cd startWebpack(или другое название)
-        затем делаем изменения в файлах
-        затем git add .
-        затем git commit -m "имя коммита"
-        затем git push -->
-        
-        
-
-    
+    </header>
 </body>
 </html>
 

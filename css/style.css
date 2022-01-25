@@ -1,0 +1,36 @@
+/* стили хедера */
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+/* стили меню хедера */
+.navigation__item-link {
+    text-decoration: none;
+    color: #939699;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+/* стили кнопки */
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #4592FF;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.button__icon {
+    margin-right: 10px;
+}

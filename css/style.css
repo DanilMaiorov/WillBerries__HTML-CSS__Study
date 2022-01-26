@@ -63,6 +63,14 @@ html, body {
     /* при помощи бекграунд можем задать и цвет и картинку и спозиционировать её */
     background: #B4D1E0 url(../img/slide-img-1.png) no-repeat /* сначала задаем вертикальное расположение, потом горизонтальное и можем еще отодвинуть прописав проценты --> */ top right 5%; 
 }
+.slide-2 {
+    /* при помощи бекграунд можем задать и цвет и картинку и спозиционировать её */
+    background: #42f5b0 url(../img/slide-img-1.png) no-repeat /* сначала задаем вертикальное расположение, потом горизонтальное и можем еще отодвинуть прописав проценты --> */ top right 5%; 
+}
+.slide-3 {
+    /* при помощи бекграунд можем задать и цвет и картинку и спозиционировать её */
+    background: #beeb94 url(../img/slide-img-1.png) no-repeat /* сначала задаем вертикальное расположение, потом горизонтальное и можем еще отодвинуть прописав проценты --> */ top right 5%; 
+}
 .label {
     background: #3DC47E;
     border-radius: 0.3rem;
@@ -92,6 +100,7 @@ html, body {
     top: 50%; /* опустили на 50% вниз, но кнопки будут не посередине, потому они опустились от верхнего края и нужно их поднять */
     width: 100%;
     transform: translateY(-50%); /* поднимаем кнопки на половину их высоты по оси Y */
+    z-index: 100;
 }
 .slider__button {
     background-color: transparent;
@@ -263,4 +272,47 @@ footer {
 .payment-logo {
     vertical-align: middle;
     margin-right: 2.5rem;
+}
+
+/* Медиа запросы для адаптива */
+@media (max-width: 1200px) { /* будет работать на экрана с шириной не более 1200px*/
+    .slide-1, .slide-2, .slide-3 {
+        background-size: cover;
+    }
+    .card-3 {
+        background-size: cover;
+        margin-bottom: 3rem;
+    }
+    .card__title.large {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .card-4 {
+        min-height: 37rem;
+    }
+}
+@media (max-width: 992px) { /* будет работать на экрана с шириной не более 992px*/
+    .slider-nav {
+        display: none;
+    }
+}
+@media (max-width: 576px) { /* будет работать на экрана с шириной не более 576px*/
+    .slide__title {
+        font-size: 3.6rem;
+        line-height: 4.6rem;
+        margin-bottom: 0;
+    }
+    .card {
+        background-position: top left;
+        padding: 3rem;
+        min-height: 30rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    .card-3 {
+        background-size: cover;
+    }
+    .card-4 {
+        background-position: top right;
+    }    
 }

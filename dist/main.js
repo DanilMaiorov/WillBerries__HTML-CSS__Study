@@ -16,17 +16,17 @@
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_module_1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/module_1 */ \"./modules/module_1.js\");\n\r\n\r\n(0,_modules_module_1__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_sliderSwiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/sliderSwiper */ \"./modules/sliderSwiper.js\");\n\r\n\r\n(0,_modules_sliderSwiper__WEBPACK_IMPORTED_MODULE_0__.sliderSwiper)();\r\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
-/***/ "./modules/module_1.js":
-/*!*****************************!*\
-  !*** ./modules/module_1.js ***!
-  \*****************************/
+/***/ "./modules/sliderSwiper.js":
+/*!*********************************!*\
+  !*** ./modules/sliderSwiper.js ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst module_1 = () => {\r\n    const module1 = 'test module';\r\n    console.log(module1);\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (module_1);\n\n//# sourceURL=webpack:///./modules/module_1.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"sliderSwiper\": () => (/* binding */ sliderSwiper)\n/* harmony export */ });\nconst sliderSwiper = () => {\r\n    /* подключаем свайпер через CDN в конце разметки */\r\n    const swiper = new Swiper('.swiper', {\r\n        direction: 'horizontal',\r\n        loop: true,\r\n        autoplay: {\r\n        delay: 2500,\r\n        disableOnInteraction: false,\r\n        },\r\n        navigation: {\r\n          nextEl: '.slider-button-next',\r\n          prevEl: '.slider-button-prev',\r\n        },\r\n      });\r\n}\r\n\n\n//# sourceURL=webpack:///./modules/sliderSwiper.js?");
 
 /***/ })
 

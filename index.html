@@ -13,7 +13,7 @@
     <title>WillBerries</title>
 </head>
 <body>
-    <header class="container header">
+    <header class="container header" id="to-top">
         <div class="row justify-content-between align-items-center">
             <!-- align-items класс, дающий align-items, в зависимости что пропишем -->
             <!-- row класс дающий строку -->
@@ -70,6 +70,7 @@
             </div>
         </div>
     </header>
+
     <!-- Top-Slider -->
     <div class="slider">
         <section class="slide slide-1">
@@ -109,7 +110,7 @@
     <!-- Cards Section -->
     <div class="container pt-5 pb-5">
         <!-- pt-5 класс, дает паддинг топ сверху на 3 рем -->
-        <div class="row">
+        <div class="row mb-5">
             <!-- 1 card -->
             <div class="col-6">
                 <div class="card card-1 mb-5">
@@ -154,7 +155,134 @@
                 </div>
             </div>
         </div>
+        <div class="row align-items-center mb-5">
+            <div class="col-9">
+                <h2 class="section__title">New Arrival</h2>
+            </div>
+            <div class="col-3 d-flex justify-content-end">
+                <a class="more" href="#">View All</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="goods-card">
+                    <span class="label">New</span>
+                    <img src="/img/goods-1.png" alt="good: hoodie" class="goods-img">
+                    <h3 class="goods-title">Embroidered Hoodie</h3>
+                    <!-- /.goods-title -->
+                    <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+                    <!-- /.goods-description -->
+                    <span class="goods-price">$89</span>
+                    <!-- /.goods-price -->
+                </div>
+            </div>
+            <!-- /.col-3 -->
+            <div class="col-3">
+                <div class="goods-card">
+                    <span class="label">New</span>
+                    <img src="/img/goods-2.png" alt="good: trousers" class="goods-img">
+                    <h3 class="goods-title">Faded Beach Trousers</h3>
+                    <!-- /.goods-title -->
+                    <p class="goods-description">Navy/Ochre/Black/Khaki</p>
+                    <!-- /.goods-description -->
+                    <span class="goods-price">$139</span>
+                    <!-- /.goods-price -->
+                </div>
+            </div>
+            <!-- /.col-3 -->
+            <div class="col-3">
+                <div class="goods-card">
+                    <span class="label">New</span>
+                    <img src="/img/goods-3.png" alt="good: t-shirt" class="goods-img">
+                    <h3 class="goods-title">Text T-Shirt</h3>
+                    <!-- /.goods-title -->
+                    <p class="goods-description">White</p>
+                    <!-- /.goods-description -->
+                    <span class="goods-price">$59</span>
+                    <!-- /.goods-price -->
+                </div>
+            </div>
+            <!-- /.col-3 -->
+            <div class="col-3">
+                <div class="goods-card">
+                    <span class="label">New</span>
+                    <img src="/img/goods-4.png" alt="good: shirt" class="goods-img">
+                    <h3 class="goods-title">Striped Long Sleeve Shirt</h3>
+                    <!-- /.goods-title -->
+                    <p class="goods-description">Red/Sky Blue</p>
+                    <!-- /.goods-description -->
+                    <span class="goods-price">$119</span>
+                    <!-- /.goods-price -->
+                </div>
+            </div>
+            <!-- /.col-3 -->
+        </div>
     </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+        <!-- /.container -->  
+        <div class="row">
+            <div class="col-7">
+                <nav>
+                    <ul class="footer-menu d-flex">
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__item-link">Shop</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__item-link">About Us</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__item-link">Careers</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__item-link">FAQ</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__item-link">Blog</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__item-link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-3 d-flex align-items-center">
+                <span class="footer-text">Follow Us</span>
+                <span class="footer-social d-inline-flex align-items-center">
+                    <a href="#" class="footer-social__link">
+                        <img src="/img/Facebook.svg" alt="icon:facebook">
+                    </a>
+                    <a href="#" class="footer-social__link">
+                        <img src="/img/Twitter.svg" alt="icon:twitter">
+                    </a>
+                    <a href="#" class="footer-social__link">
+                        <img src="/img/Instagram.svg" alt="icon:instagram">
+                    </a>
+                </span>
+            </div>
+            <div class="col-2 d-flex justify-content-end">
+                <span class="footer-text">© 2019 Universal UI Kit</span>
+            </div>
+        </div>
+        <hr class="footer-line mb-5" color="white" size="0.1rem">
+        <div class="row d-flex justify-content-between">
+            <div class="col-5">
+                <img class="payment-logo" src="/img/visa.png" alt="visa logo">
+                <img class="payment-logo" src="/img/mcard.png" alt="mastercard logo">
+                <img class="payment-logo" src="/img/paypal.png" alt="paypal logo">
+                <img class="payment-logo" src="/img/bitcoin.png" alt="bitcoin logo">
+            </div>
+            <div class="col-2 d-flex justify-content-end">
+                <a href="#to-top" class="top-link d-flex align-items-center">
+                    <span class="top-link__text">Top</span>
+                    <img src="/img/arrow-to-top.svg" alt="logo: arrow top">
+                </a>
+            </div>
+        </div>
+        </div>
+        
+    </footer>
 </body>
 </html>
 

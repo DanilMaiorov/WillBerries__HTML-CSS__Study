@@ -16,17 +16,17 @@
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_module_1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/module_1 */ \"./modules/module_1.js\");\n\n\n(0,_modules_module_1__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_sliderSwiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/sliderSwiper */ \"./modules/sliderSwiper.js\");\n\n\n(0,_modules_sliderSwiper__WEBPACK_IMPORTED_MODULE_0__.sliderSwiper)();\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
-/***/ "./modules/module_1.js":
-/*!*****************************!*\
-  !*** ./modules/module_1.js ***!
-  \*****************************/
+/***/ "./modules/sliderSwiper.js":
+/*!*********************************!*\
+  !*** ./modules/sliderSwiper.js ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst module_1 = () => {\n    const module1 = 'test module';\n    console.log(module1);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (module_1);\n\n//# sourceURL=webpack:///./modules/module_1.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"sliderSwiper\": () => (/* binding */ sliderSwiper)\n/* harmony export */ });\nconst sliderSwiper = () => {\n    /* подключаем свайпер через CDN в конце разметки */\n    const swiper = new Swiper('.swiper', {\n        direction: 'horizontal',\n        loop: true,\n        autoplay: {\n        delay: 2500,\n        disableOnInteraction: false,\n        },\n        navigation: {\n          nextEl: '.slider-button-next',\n          prevEl: '.slider-button-prev',\n        },\n      });\n}\n\n\n//# sourceURL=webpack:///./modules/sliderSwiper.js?");
 
 /***/ })
 

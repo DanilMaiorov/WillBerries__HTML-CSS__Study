@@ -1,3 +1,3 @@
-import module_1 from './modules/module_1';
+import { sliderSwiper } from './modules/sliderSwiper';
 
-module_1();
+sliderSwiper();

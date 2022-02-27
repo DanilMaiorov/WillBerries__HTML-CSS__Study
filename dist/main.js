@@ -16,7 +16,27 @@
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_sliderSwiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/sliderSwiper */ \"./modules/sliderSwiper.js\");\n\r\n\r\n(0,_modules_sliderSwiper__WEBPACK_IMPORTED_MODULE_0__.sliderSwiper)();\r\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_sliderSwiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/sliderSwiper */ \"./modules/sliderSwiper.js\");\n/* harmony import */ var _modules_cart__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/cart */ \"./modules/cart.js\");\n/* harmony import */ var _modules_search__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/search */ \"./modules/search.js\");\n\r\n\r\n\r\n\r\n//sliderSwiper();\r\n(0,_modules_cart__WEBPACK_IMPORTED_MODULE_1__.cart)();\r\n(0,_modules_search__WEBPACK_IMPORTED_MODULE_2__.search)();\r\n\n\n//# sourceURL=webpack:///./index.js?");
+
+/***/ }),
+
+/***/ "./modules/cart.js":
+/*!*************************!*\
+  !*** ./modules/cart.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"cart\": () => (/* binding */ cart)\n/* harmony export */ });\nfunction cart () {\r\n    const cartBtn = document.querySelector('.button-cart')\r\n    const cart = document.querySelector('#modal-cart') \r\n    const closeBtn = cart.querySelector('.modal-close')\r\n    cartBtn.addEventListener('click', () => {\r\n        cart.style.display = 'flex'\r\n    })\r\n    closeBtn.addEventListener('click', () => {\r\n        cart.style.display = ''\r\n    })\r\n\r\n}\n\n//# sourceURL=webpack:///./modules/cart.js?");
+
+/***/ }),
+
+/***/ "./modules/search.js":
+/*!***************************!*\
+  !*** ./modules/search.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"search\": () => (/* binding */ search)\n/* harmony export */ });\nfunction search () {\r\n    const input = document.querySelector('.search-block > input')\r\n    const btn = document.querySelector('.search-block > button')\r\n\r\n    btn.addEventListener('click', () => {\r\n        console.log(input.value);\r\n        input.value = ''\r\n    })\r\n\r\n}\n\n//# sourceURL=webpack:///./modules/search.js?");
 
 /***/ }),
 
@@ -26,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"sliderSwiper\": () => (/* binding */ sliderSwiper)\n/* harmony export */ });\nconst sliderSwiper = () => {\r\n    /* подключаем свайпер через CDN в конце разметки */\r\n    const swiper = new Swiper('.swiper', {\r\n        direction: 'horizontal',\r\n        loop: true,\r\n        autoplay: {\r\n        delay: 2500,\r\n        disableOnInteraction: false,\r\n        },\r\n        navigation: {\r\n          nextEl: '.slider-button-next',\r\n          prevEl: '.slider-button-prev',\r\n        },\r\n      });\r\n}\r\n\n\n//# sourceURL=webpack:///./modules/sliderSwiper.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"sliderSwiper\": () => (/* binding */ sliderSwiper)\n/* harmony export */ });\nconst sliderSwiper = () => {\r\n    /* подключаем свайпер через CDN в конце разметки */\r\n    const swiper = new Swiper('.swiper', {\r\n        direction: 'horizontal',\r\n        loop: true,\r\n        autoplay: {\r\n        delay: 7500,\r\n        disableOnInteraction: false,\r\n        },\r\n        navigation: {\r\n          nextEl: '.slider-button-next',\r\n          prevEl: '.slider-button-prev',\r\n        },\r\n      });\r\n}\r\n\n\n//# sourceURL=webpack:///./modules/sliderSwiper.js?");
 
 /***/ })
 

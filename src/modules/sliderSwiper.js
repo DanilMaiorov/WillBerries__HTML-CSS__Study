@@ -4,7 +4,7 @@ export const sliderSwiper = () => {
         direction: 'horizontal',
         loop: true,
         autoplay: {
-        delay: 2500,
+        delay: 7500,
         disableOnInteraction: false,
         },
         navigation: {

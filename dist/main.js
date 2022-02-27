@@ -16,7 +16,7 @@
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_sliderSwiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/sliderSwiper */ \"./modules/sliderSwiper.js\");\n/* harmony import */ var _modules_cart__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/cart */ \"./modules/cart.js\");\n/* harmony import */ var _modules_search__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/search */ \"./modules/search.js\");\n\r\n\r\n\r\n\r\n//sliderSwiper();\r\n(0,_modules_cart__WEBPACK_IMPORTED_MODULE_1__.cart)();\r\n(0,_modules_search__WEBPACK_IMPORTED_MODULE_2__.search)();\r\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_sliderSwiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/sliderSwiper */ \"./modules/sliderSwiper.js\");\n/* harmony import */ var _modules_cart__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/cart */ \"./modules/cart.js\");\n/* harmony import */ var _modules_search__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/search */ \"./modules/search.js\");\n/* harmony import */ var _modules_getGoods__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/getGoods */ \"./modules/getGoods.js\");\n\r\n\r\n\r\n\r\n\r\n//sliderSwiper();\r\n(0,_modules_cart__WEBPACK_IMPORTED_MODULE_1__.cart)();\r\n(0,_modules_search__WEBPACK_IMPORTED_MODULE_2__.search)();\r\n(0,_modules_getGoods__WEBPACK_IMPORTED_MODULE_3__.getGoods)();\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
@@ -27,6 +27,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"cart\": () => (/* binding */ cart)\n/* harmony export */ });\nfunction cart () {\r\n    const cartBtn = document.querySelector('.button-cart')\r\n    const cart = document.querySelector('#modal-cart') \r\n    const closeBtn = cart.querySelector('.modal-close')\r\n    cartBtn.addEventListener('click', () => {\r\n        cart.style.display = 'flex'\r\n    })\r\n    closeBtn.addEventListener('click', () => {\r\n        cart.style.display = ''\r\n    })\r\n\r\n}\n\n//# sourceURL=webpack:///./modules/cart.js?");
+
+/***/ }),
+
+/***/ "./modules/getGoods.js":
+/*!*****************************!*\
+  !*** ./modules/getGoods.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"getGoods\": () => (/* binding */ getGoods)\n/* harmony export */ });\nfunction getGoods () {\r\n    const links = document.querySelectorAll('.navigation__item-link')\r\n\r\n    \r\n    function getData () {\r\n        fetch('https://willberries-test-e8a5b-default-rtdb.firebaseio.com/db.json')\r\n            .then(res => {\r\n                res.json().then(data => {\r\n                    localStorage.setItem('goods', JSON.stringify(data))\r\n                })\r\n            })\r\n    }\r\n    links.forEach((link) => {\r\n        link.addEventListener('click', (e) => {\r\n            e.preventDefault()\r\n            getData()\r\n        })\r\n    })\r\n}\n\n//# sourceURL=webpack:///./modules/getGoods.js?");
 
 /***/ }),
 

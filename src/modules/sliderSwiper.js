@@ -1,5 +1,4 @@
 export const sliderSwiper = () => {
-    /* подключаем свайпер через CDN в конце разметки */
     const swiper = new Swiper('.swiper', {
         direction: 'horizontal',
         loop: true,

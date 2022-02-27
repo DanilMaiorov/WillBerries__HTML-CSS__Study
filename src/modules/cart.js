@@ -8,5 +8,4 @@ export function cart () {
     closeBtn.addEventListener('click', () => {
         cart.style.display = ''
     })
-
 }

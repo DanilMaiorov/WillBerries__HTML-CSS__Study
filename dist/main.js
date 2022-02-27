@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"cart\": () => (/* binding */ cart)\n/* harmony export */ });\nfunction cart () {\r\n    const cartBtn = document.querySelector('.button-cart')\r\n    const cart = document.querySelector('#modal-cart') \r\n    const closeBtn = cart.querySelector('.modal-close')\r\n    cartBtn.addEventListener('click', () => {\r\n        cart.style.display = 'flex'\r\n    })\r\n    closeBtn.addEventListener('click', () => {\r\n        cart.style.display = ''\r\n    })\r\n\r\n}\n\n//# sourceURL=webpack:///./modules/cart.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"cart\": () => (/* binding */ cart)\n/* harmony export */ });\nfunction cart () {\r\n    const cartBtn = document.querySelector('.button-cart')\r\n    const cart = document.querySelector('#modal-cart') \r\n    const closeBtn = cart.querySelector('.modal-close')\r\n    cartBtn.addEventListener('click', () => {\r\n        cart.style.display = 'flex'\r\n    })\r\n    closeBtn.addEventListener('click', () => {\r\n        cart.style.display = ''\r\n    })\r\n}\n\n//# sourceURL=webpack:///./modules/cart.js?");
 
 /***/ }),
 

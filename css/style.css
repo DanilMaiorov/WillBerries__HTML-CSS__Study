@@ -9,6 +9,10 @@ html, body {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
+img { 
+    max-width: 100%;
+    height: auto;
+}
 .header {
     padding: 1.5rem 0;
 }
@@ -196,13 +200,23 @@ html, body {
     padding: 1rem;
 }
 .goods-card {
-    position: relative;
-    text-align: center;
-    padding: 3rem 3.5rem 3.5rem 3.5rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: stretch;
+    position: relative;
+    text-align: center;
+    padding: 30px 35px 35px;
+    min-height: 100%;
 }
+.goods-card-btn {
+    display: block;
+    width: 100px;
+    margin: auto auto 0;
+}
+.goods-card-btn .button-price {
+    margin: 0;
+}
+
 .goods-card .label {
     position: absolute;
     top: 1.8rem;
@@ -229,6 +243,10 @@ html, body {
     font-size: 1.8rem;
     line-height: 3rem;
     color: #262D33;
+}
+.goods-img {
+    object-fit: contain;
+    height: 190px;
 }
 /* Footer */
 footer {

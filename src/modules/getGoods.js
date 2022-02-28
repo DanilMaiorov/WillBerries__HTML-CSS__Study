@@ -1,6 +1,5 @@
 export function getGoods () {
     const links = document.querySelectorAll('.navigation__item-link')
-
     const viewAll = document.querySelector('.more');
 
     //рендер
@@ -30,10 +29,8 @@ export function getGoods () {
             /* fetch('https://willberries-test-e8a5b-default-rtdb.firebaseio.com/db.json') для работы с сервером*/
                 .then(res => {
                     res.json().then(data => {
-
                         const array = category ? data.filter((item) => item[category] === value) : data //создаем переменную, в которой проводим фильтрацию
                         localStorage.setItem('goods', JSON.stringify(array))
-
                         //чтобы не осуществлялся переход внутри одной страницы нужно условие  pathname: "/goods.html"
                         if(window.location.pathname !== "/goods.html") {
                             window.location.href = '../../goods.html'

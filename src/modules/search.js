@@ -26,7 +26,7 @@ export function search () {
         }
         
         function getData (value) {
-                fetch('../../db/db.json')
+                fetch('./db/db.json')
                 /* fetch('https://willberries-test-e8a5b-default-rtdb.firebaseio.com/db.json') для работы с сервером*/
                     .then(res => {
                         res.json().then(data => {
